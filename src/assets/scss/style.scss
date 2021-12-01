@@ -2,11 +2,12 @@
 @import "vendor/reset";
 
 html{
-    font-style: 62.5%;
+    font-size: 62.5%;
 }
 body {
     background-color: #181818;
     font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    line-height: 1.5;
     font-size: 1.4rem;
     color: $white;
 }
@@ -23,3 +24,6 @@ body {
 @import "blocks/main";
 @import "blocks/container";
 @import "blocks/page";
+@import "blocks/profile";
+@import "blocks/social";
+@import "blocks/btn";

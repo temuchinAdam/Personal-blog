@@ -12,7 +12,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="description" content="">
     
-    <title>Search</title>
+    <title>Signin</title>
 </head>
 <body>
     <div class="page">
@@ -100,73 +100,36 @@
         <main class='main'>
             <div class="container">
                 
-                <h1 class="page__title">Результаты поиска “Создание сайта”</h1>
                 
-                <article class="post">
-                    <div class="post__content">
-                        <h2 class="post__title">
-                            <a href="post.html">Как писать код быстро и безболезненно?</a>
-                        </h2>
-                        <p class="post__description">    
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro aut laudantium ducimus corrupti deleniti explicabo unde necessitatibus soluta voluptatum, quidem officiis rem! Non, repellat exercitationem?
-                        </p>
+                <h1 class="page__title page__title--center">Вход</h1>
+                
+                <form class="form form--auth" action="/" method="post">
+                    
+                    <div class="form__group form__group--mb">
+                        <input class="form__control" type="email" placeholder="Ваш e-mail">
+                        <span class="form__line"></span>
                     </div>
-                    <div class="post__footer">
-                        <ul class="post__data">
-                            <li class="post__data-item">
-                                <time datetime="2020-06-21">21.06.2021</time>
+                    <div class="form__group form__group--mb">
+                        <input class="form__control" type="password" placeholder="Пароль">
+                        <span class="form__line"></span>
+                    </div>
+                   
+                    <div class="form__footer form__footer--center">
+                        <div class="form__group form__group--mb">
+                            <button class="btn btn--blue btn--rounded btn--sm" type="submit">
+                                Вход
+                            </button>
+                        </div>
+                        <ul class="form__footer-list">
+                            <li>
+                                <a href="signup.html">Регистрация</a>
                             </li>
-                            <li class="post__data-item">
-                                <a href="post.html">Создание сайтов</a>
+                            <li>
+                                <a href="reset.html">Восстановить</a>
                             </li>
                         </ul>
-                        <a class="post__read" href="post.html">Перейти</a>
                     </div>
-                </article>
-                
-                <article class="post">
-                    <div class="post__content">
-                        <h2 class="post__title">
-                            <a href="post.html">Как писать код быстро и безболезненно?</a>
-                        </h2>
-                        <p class="post__description">    
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro aut laudantium ducimus corrupti deleniti explicabo unde necessitatibus soluta voluptatum, quidem officiis rem! Non, repellat exercitationem?
-                        </p>
-                    </div>
-                    <div class="post__footer">
-                        <ul class="post__data">
-                            <li class="post__data-item">
-                                <time datetime="2020-06-21">21.06.2021</time>
-                            </li>
-                            <li class="post__data-item">
-                                <a href="post.html">Создание сайтов</a>
-                            </li>
-                        </ul>
-                        <a class="post__read" href="post.html">Перейти</a>
-                    </div>
-                </article>
-                
-                <article class="post">
-                    <div class="post__content">
-                        <h2 class="post__title">
-                            <a href="post.html">Как писать код быстро и безболезненно?</a>
-                        </h2>
-                        <p class="post__description">    
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro aut laudantium ducimus corrupti deleniti explicabo unde necessitatibus soluta voluptatum, quidem officiis rem! Non, repellat exercitationem?
-                        </p>
-                    </div>
-                    <div class="post__footer">
-                        <ul class="post__data">
-                            <li class="post__data-item">
-                                <time datetime="2020-06-21">21.06.2021</time>
-                            </li>
-                            <li class="post__data-item">
-                                <a href="post.html">Создание сайтов</a>
-                            </li>
-                        </ul>
-                        <a class="post__read" href="post.html">Перейти</a>
-                    </div>
-                </article>
+                </form>
             </div>
         </main>
     </div>      

@@ -1,0 +1,26 @@
+.related{
+    border-bottom: 1px solid #1c1c1c;
+    padding: 3rem 0 .5rem;
+    padding-bottom: .5rem;
+}
+
+.related__list-item{
+    margin-bottom: 2.5rem;
+    width: 50%;
+}
+.related__list{
+    display: flex;
+    flex-wrap: wrap;
+}
+.relate__list-title{
+    font-size: 1.4rem;
+    color: #f3eba2;
+    font-weight: 500;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    a{
+        color: inherit;
+    }
+   
+}

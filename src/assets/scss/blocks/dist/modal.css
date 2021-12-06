@@ -1,0 +1,60 @@
+.modal {
+  display: flex;
+  position: fixed;
+  justify-content: center;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 1010;
+  align-items: center;
+  padding: 1rem;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.modal__content {
+  position: relative;
+  width: 100%;
+  max-width: 500px;
+  padding: 8rem 8rem;
+  background-color: #202020;
+  border-radius: 5px;
+}
+.modal__content--contact {
+  padding-bottom: 2.5rem;
+}
+
+.modal__close {
+  padding: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  opacity: 0.5;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  transition: transform 0.2s linear, opacity 0.2s linear;
+}
+.modal__close:hover {
+  transform: rotate(90deg);
+  opacity: 1;
+}
+
+.modal__footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 4rem;
+  color: #b2b2b2;
+  font-size: 1.2rem;
+}
+.modal__footer li {
+  margin: 1rem, 0.5rem;
+}
+.modal__footer a {
+  color: inherit;
+  text-decoration: underline;
+}
+.modal__footer a:hover {
+  text-decoration: none;
+}

@@ -1,5 +1,24 @@
+.nav{
+   
+    
+    &--mobile{
+        display: none;
+        margin-top: 3rem 0;
+    }
+
+    @include breakpoint($tablet-bp){
+        display: none;
+          
+        &--mobile{
+            display: block;
+        }
+    }
+}
 .nav__list{
     display: flex;
+    @include breakpoint($tablet-bp){
+        flex-direction: column;
+    }
     
 }
 .nav__item{
@@ -14,6 +33,14 @@
             display: block;
         }
     }
+    @include breakpoint($tablet-bp){
+        &:hover{
+            .nav__lin{
+                background: none;
+            }
+        }
+    }
+    
 }
 .nav__link{
     display: block;
@@ -40,5 +67,10 @@
             right: 1.25rem;
             transform: translateY(-50%);
         }
+    }
+    @include breakpoint($tablet-bp){
+        padding-left: 0;
+        padding-right: 0;
+        font-size: 1.6rem;
     }
 }

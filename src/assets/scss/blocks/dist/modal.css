@@ -12,6 +12,9 @@
   top: 0;
   left: 0;
 }
+.modal.show {
+  display: flex;
+}
 
 .modal__content {
   position: relative;
@@ -20,9 +23,16 @@
   padding: 8rem 8rem;
   background-color: #202020;
   border-radius: 5px;
+  transform: translateY(-50px);
+  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  opacity: 0;
 }
 .modal__content--contact {
   padding-bottom: 2.5rem;
+}
+.modal__content--story {
+  padding: 0;
+  background: none;
 }
 
 .modal__close {
@@ -57,4 +67,9 @@
 }
 .modal__footer a:hover {
   text-decoration: none;
+}
+
+.modal__video {
+  display: block;
+  margin: 0 auto;
 }

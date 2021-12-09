@@ -1,5 +1,5 @@
 .modal{
-    // display: flex;
+   
     display: none;
     position: fixed;
     justify-content: center;
@@ -13,6 +13,9 @@
     top: 0;
     left: 0;
     
+    &.show{
+        display: flex;
+    }
 }
 .modal__content{
     position: relative;
@@ -21,8 +24,20 @@
     padding: 8rem 8rem;
     background-color: #202020;
     border-radius: 5px;
+    transform: translateY(-50px);
+    transition: transform .2s ease-in-out, opacity .2s ease-in-out;
+    opacity: 0;
+
+    @include breakpoint($tablet-bp){
+        padding: 5rem 3rem 3rem;
+    }
     &--contact{
         padding-bottom: 2.5rem;
+    }
+
+    &--story{
+        padding: 0;
+        background: none;
     }
 }
 .modal__close{
@@ -56,4 +71,9 @@
             text-decoration: none;
         }
     }
+}
+
+.modal__video{
+    display: block;
+    margin: 0 auto;
 }

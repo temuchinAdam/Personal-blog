@@ -375,8 +375,13 @@ body {
   font-size: 1.4rem;
   color: #fff;
 }
-body.no-scroll, body.show-sidebar {
+body.no-scroll {
   overflow: hidden;
+}
+@media (max-width: 991px) {
+  body.show-sidebar {
+    overflow: hidden;
+  }
 }
 
 a {
@@ -521,17 +526,6 @@ a:hover {
   .show-sidebar .page {
     position: relative;
   }
-  .show-sidebar .page:after {
-    content: "";
-    display: block;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 100;
-  }
 }
 
 .page__title {
@@ -541,6 +535,19 @@ a:hover {
 }
 .page__title--center {
   text-align: center;
+}
+
+@media (max-width: 991px) {
+  .page__mask {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+  }
 }
 
 .profile {
@@ -906,13 +913,13 @@ a:hover {
 
 .add-post__form {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
 }
 
 .add-post__textarea {
   display: block;
   flex-grow: 1;
-  height: 26px;
+  height: 34px;
   border: none;
   background: transparent;
   resize: none;
@@ -1363,7 +1370,7 @@ a:hover {
 }
 .form__control--textarea {
   resize: none;
-  height: 30px;
+  height: 32px;
   overflow: hidden;
 }
 
@@ -1555,6 +1562,9 @@ a:hover {
   top: 0;
   left: 0;
 }
+.modal.show {
+  display: flex;
+}
 
 .modal__content {
   position: relative;
@@ -1563,9 +1573,21 @@ a:hover {
   padding: 8rem 8rem;
   background-color: #202020;
   border-radius: 5px;
+  transform: translateY(-50px);
+  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  opacity: 0;
+}
+@media (max-width: 991px) {
+  .modal__content {
+    padding: 5rem 3rem 3rem;
+  }
 }
 .modal__content--contact {
   padding-bottom: 2.5rem;
+}
+.modal__content--story {
+  padding: 0;
+  background: none;
 }
 
 .modal__close {
@@ -1600,6 +1622,11 @@ a:hover {
 }
 .modal__footer a:hover {
   text-decoration: none;
+}
+
+.modal__video {
+  display: block;
+  margin: 0 auto;
 }
 
 .burger {

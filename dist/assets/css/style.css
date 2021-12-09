@@ -513,6 +513,7 @@ a:hover {
 
 @media (max-width: 991px) {
     .main {
+        padding-top: 7rem;
         padding-left: 0;
     }
 }
@@ -718,15 +719,19 @@ a:hover {
     padding: 0.7em 1.25em;
 }
 
+.nav--mobile {
+    display: none;
+    margin-top: 3rem 0;
+}
+
 @media (max-width: 991px) {
     .nav {
         display: none;
     }
-}
 
-.nav--mobile {
-    display: none;
-    margin-top: 3rem 0;
+    .nav--mobile {
+        display: block;
+    }
 }
 
 .nav__list {
@@ -835,6 +840,15 @@ a:hover {
     color: rgba(255, 255, 255, 0.4);
 }
 
+@media (max-width: 991px) {
+    .search__input {
+        height: 4rem;
+        padding-top: 0.9rem;
+        padding-bottom: 1rem;
+        font-size: 1.6rem;
+    }
+}
+
 .subnav {
     width: 165px;
     background-color: #3137C9;
@@ -889,6 +903,12 @@ a:hover {
     grid-column-gap: 13px;
     grid-template-rows: 195px;
     margin-bottom: 3rem;
+}
+
+@media (max-width: 700px) {
+    .stories {
+        grid-template-columns: 150px 150px 150px 150px;
+    }
 }
 
 .stories__item {
